@@ -41,6 +41,15 @@ def starts_with_consonant?(string)
 end
 
 def binary_multiple_of_4?(string)
+  if string == "" || string.match?(/[^0-9]/)
+    return false
+  end
+  str = "0b" + string
+  num = str.to_i(2)
+  if num % 4 == 0
+    return true
+  end
+  return false
   # YOUR CODE HERE
 end
 
