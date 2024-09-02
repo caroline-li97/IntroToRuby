@@ -29,10 +29,14 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, " + name
 end
 
 def starts_with_consonant?(string)
+  if string == "" || string[0].match(/[AEIOUaeiou]/) || string[0].match(/[^a-zA-Z]/)
+    return false
+  end
+  return true
   # YOUR CODE HERE
 end
 
