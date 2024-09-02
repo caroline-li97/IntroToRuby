@@ -10,6 +10,10 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
+  sum = 0
+  max2 = arr.max(2)
+  max2.each {|a| sum += a}
+  return sum
   # YOUR CODE HERE
 end
 
