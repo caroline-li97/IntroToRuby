@@ -14,11 +14,16 @@ def max_2_sum(arr)
   max2 = arr.max(2)
   max2.each {|a| sum += a}
   return sum
-  # YOUR CODE HERE
 end
 
 def sum_to_n?(arr, number)
-  # YOUR CODE HERE
+  for i in 0...(arr.count)
+    num2 = number - arr[i]
+    if num2 != arr[i] && arr.include?(num2)
+      return true
+    end
+  end
+  return false
 end
 
 # Part 2
