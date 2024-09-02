@@ -57,5 +57,8 @@ end
 
 # Object representing a book
 class BookInStock
-  # YOUR CODE HERE
+  def initialize(isbn, price)
+    @isbn = isbn
+    @price = price
+  end
 end
