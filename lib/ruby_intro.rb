@@ -58,6 +58,7 @@ end
 # Object representing a book
 class BookInStock
   def initialize(isbn, price)
+    raise ArgumentError, "the value is invalid" unless isbn != "" && price > 0
     @isbn = isbn
     @price = price
   end
