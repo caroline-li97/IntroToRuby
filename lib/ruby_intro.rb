@@ -29,7 +29,7 @@ end
 # Part 2
 
 def hello(name)
-  return "Hello, " + name
+  return "Hello, #{name}"
 end
 
 def starts_with_consonant?(string)
@@ -79,4 +79,8 @@ class BookInStock
     @price = new_price
   end
 
+  def price_as_string
+    new_price = format("%.2f", @price)
+    return "$#{new_price}"
+  end
 end
