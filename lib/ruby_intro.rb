@@ -61,4 +61,21 @@ class BookInStock
     @isbn = isbn
     @price = price
   end
+
+  def isbn  #getter
+    return @isbn
+  end
+
+  def isbn=(new_isbn) #setter
+    @isbn = new_isbn
+  end
+
+  def price #getter
+    return @price
+  end
+
+  def price=(new_price) #setter
+    @price = new_price
+  end
+
 end
